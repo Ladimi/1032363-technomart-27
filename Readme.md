@@ -1,8 +1,8 @@
 # Личный проект «Техномарт»
 
 * Студент: [Olesya Dementeva](https://up.htmlacademy.ru/htmlcss/27/user/1032363).
-* Наставник: [Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim).
-
+* Наставник: [Привет! Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim).
+* Личный проект: [Техномарт]. 
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
