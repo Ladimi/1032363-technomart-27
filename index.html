@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="white-background">
       <header class="header">
         <section class="top-background">
           <div class="menu-back">
-            <img src="img/logo.svg" width="109" height="19" alt="техномарт">
+            <img src="img/logo.svg" width="109" height="19" alt="логотип техномарт">
             <div class="search">
               <img class="icon-search" src="img/icon-search.png" width="17" height="17" alt="поиск">
-              <p>
-                Поиск:
-              </p>
-              <!--Поле ввода-->
+              <div>
+		        <label for="search-box">Поиск:</label>
+		        <input id="search-box" type="text" name="search">
+		      </div>
             </div>
             <div class="bookmark">
               <p>
@@ -41,7 +45,7 @@
           <div>
             <div class="phone-back">
               <p class="phone-number">
-                <a href="tel:+7(812)555-05-55">+7(812)555-05-55"</a>
+                <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
               </p>
               <img class="icon-phone" src="img/icon-phone.png" width="19" height="19" "телефон">
             </div>
@@ -337,6 +341,5 @@
 		</div>
 	  </form>
 	</section>
-	
   </body>
 </html>
