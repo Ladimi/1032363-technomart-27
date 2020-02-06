@@ -1,10 +1,157 @@
 body {
   margin: 0;
   padding: 0;
-
-  color: #ffffff;
+  
+  font-family: "Cuprum", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.head {
+  background-color: #f1f5f7;
+	
+}
+
+.top-background {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: left;
+  
+  background-color: #293449;
+}
+
+.top-background .search:hover,
+.top-background .bookmark:hover,
+.top-background .cart:hover {
+  background-color: #212a3a;
+}
+
+.top-background .order-button:hover {
+  background-color: #5fbb2d;
+}
+
+.top-background .bookmark:focus,
+.top-background .cart:focus {
+  background-color: #161d29;
+}
+
+.top-background .order-button:focus {
+  background-color: #518534;
+}
+
+.top-background .search:focus {
+  background-color: #ffffff;
+}
+
+.store-discreption {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  text-align: left;
+  color: #ee3643;
+}
+
+.phone-back {
+  border: solid 3px #ffffff;
+}
+
+.phone-number a {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  letter-spacing: 0.42px;
+  color: #e9292a;
+}
+
+address {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #32425c;
+}
+
+.log-in,
+.register {
+  color: #000000;
+  
+  background-color: #ffffff;
+}
+
+.log-in:hover,
+.register:hover {
+  color: #ee3643;
+}
+
+.log-in:activ,
+.register:activ {
+  color: #C6C6C6;
+}
+
+.menu-back {
+  font-size: 17px;
+  line-height: 17px;
+  text-align: left;
+  color: #ffffff;
+  
+  background-color: #32425c;
+}
+
+.menu-section {
+  list-style: none;
+}
+
+.menu-section a {
+  color: #ffffff;
+}
+
+.menu-section a:hover,
+.menu-section a:activ {
+  color: #1d2739;
+}
+
+.list {
+  list-style: none;
+}
+
+.list {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.yellow-back {
+  background-color: #ffbf47;
+}
+
+.blue-back {
+  background-color: #3bbce3;
+}
+
+.pink-back {
+  background-color: #dc91d8;
+}
+
+.green-back {
+  background-color: #8ed78f;
+}
+
+.yellow {
+  background-color: #ffc047;
 }
