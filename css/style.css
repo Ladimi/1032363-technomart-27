@@ -86,6 +86,15 @@ a {
   background-color: #293449;
 }
 
+.logo {
+  background-color: #ee3643;
+}
+
+.logo:hover,
+.logo:active {
+  background-color: #ca2c37;
+}
+
 .top-background .search:hover,
 .top-background .bookmark:hover,
 .top-background .cart:hover {
@@ -105,7 +114,12 @@ a {
   background-color: #518534;
 }
 
-.top-background .search:focus {
+.search input {
+  background-color: #293449;
+  border: none;
+}
+
+.search input:focus {
   background-color: #ffffff;
 }
 
@@ -219,11 +233,10 @@ a {
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-
   color: #32425c;
 }
 
-.item {
+.items {
   list-style: none;
 }
 
@@ -239,23 +252,22 @@ a {
 .item-name {
   font-size: 18px;
   line-height: 20px;
-  
   color: #000000;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #9a9a9a;
 }
 
 .price {
   font-size: 17px;
   line-height: 18px;
-  text-decoration: line-through;
+  color: #ffffff;
 
-  color: #9a9a9a;
-}
-
-.item-button {
-  font-size: 17px;
-  line-height: 18px;
-
-  color: #ffffff
+  background-image: url("img/price.jpg");
 }
 
 .brands {
@@ -264,6 +276,17 @@ a {
 
 .brand-background {
   border: solid 1px #aeaeae;
+}
+
+.brand-background:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 25px 0 #b4c2dd;
+}
+
+.brand-background:active {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px 0 #b4c2dd;
+  opacity: 0.3;
 }
 
 .service-back {
@@ -275,7 +298,6 @@ a {
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-
   color: #000000;
 }
 
@@ -284,7 +306,6 @@ a {
   font-size: 13px;
   line-height: 24px;
   text-align: left;
-
   color: #000000;
 }
 
@@ -313,7 +334,6 @@ a {
   font-size: 18px;
   line-height: 20px;
   text-align: left;
-
   color: #000000;
 }
 
@@ -322,14 +342,18 @@ a {
 }
 
 .footer-nav-back {
-  background-color: #ee3341
+  background-color: #32425c;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 68px;
 }
 
 .footer-address {
   font-size: 18px;
   line-height: 24px;
   text-align: left;
-
   color: #f3f7f9;
 }
 
@@ -350,6 +374,16 @@ a {
   color: #ffd180;
 }
 
+.footer-nav:hover,
+.footer-offers:hover {
+  text-decoration: underline;
+}
+
+.footer-nav,
+.footer-offers {
+  color: #ee3643;
+}
+
 .footer-contacts {
   background-color: #293449;
 }
@@ -360,8 +394,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   text-align: left;
-
-  color: #ffffff
+  color: #ffffff;
 }
 
 .text-style {
@@ -372,4 +405,181 @@ a {
 .fb-icon,
 .insta-icon {
   background-color: #212a3a;
+}
+
+.vk-icon:hover,
+.vk-icon:active,
+.fb-icon:hover,
+.fb-icon:active,
+.insta-icon:hover,
+.insta-icon:active {
+  background-color: #ee3643;
+}
+
+.modal {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+
+  background-color: #ffffff;
+  border-top: solid 7px #ee3341;
+}
+
+.modal-back {
+  background-color: #f1f1f1;
+}
+
+.modal h2 {
+  font:inherit;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.login-form input[type="text"],
+.message-form input[type="text"],
+.message-form input[type="email"] {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  
+  background-color: ffffff;
+}
+
+.login-form input[type="text"] {
+  color: #999999;
+
+  border: solid 2px #b5b5b5;
+}
+
+.login-form input[type="text"]:focus {
+
+  border: solid 2px #ee3643;
+}
+
+.message-form input[type="text"],
+.message-form input[type="email"] {
+  color: #a9a9a9;
+
+  border: solid 2px #dee3e4;
+}
+
+.login-form label,
+.message-form label {
+  font: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.white-button {
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.user-back p {
+  font: inherit;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.my-orders a,
+.account a {
+  text-decoration: underline;
+  color: #32425c;
+}
+
+.my-orders a:hover,
+.account a:hover {
+  text-decoration: underline;
+  color: #ee3643;
+}
+
+.user-back p:active,
+.my-orders a:active,
+.account a:active {
+  text-decoration: underline;
+  color: #cbcbcb;
+}
+
+.buy-button,
+.bookmark-button {
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.buy-button {
+  color: #ffffff;
+
+  background-color: #63a63e;
+}
+
+.buy-button:hover {
+  background-color: #5fbb2d;
+}
+
+.buy-button:active {
+  background-color: #518534;
+}
+
+.bookmark-button {
+  color: #32425c;
+
+  background-color: #ffffff;
+  border: solid 3px #63a63e;
+}
+
+.bookmark-button:hover {
+  border: solid 3px #32425c;
+}
+
+.bookmark-button:active {
+  border: solid 3px #32425c;
+  opacity: 0.3;
+}
+
+.price-filter,
+.sort-back {
+  background-color: #f7f3ec;
+}
+
+.price-filter h3,
+.filter legend {
+ font-family: "PTSans", Arial, sans-serif;
+ font-size: 17px;
+ line-height: 30px;
+ font-weight: bold;
+ color: #000000;
+}
+
+.filter label {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.view {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+}
+
+.sorting {
+  list-style: none;
 }
