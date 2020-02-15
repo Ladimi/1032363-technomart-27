@@ -101,6 +101,11 @@ a {
   background-color: #212a3a;
 }
 
+.top-background .order-button {
+  background-color: #63a63e;
+  border: none;
+}
+
 .top-background .order-button:hover {
   background-color: #5fbb2d;
 }
@@ -155,6 +160,7 @@ a {
   color: #000000;
   
   background-color: #ffffff;
+  border: none;
 }
 
 .log-in:hover,
@@ -582,4 +588,90 @@ a {
 
 .sorting {
   list-style: none;
+}
+
+
+
+.menu-back {
+  display: flex;
+  justify-content: space-around;
+  min-height: 42px;
+}
+
+.logo {
+  width: 220px;
+  height: 47px;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bookmark,
+.cart {
+  padding-right: 20px;
+}
+
+.search {
+  padding-left: 20px;
+}
+
+.bookmark-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.store-discreption-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.log-in {
+  margin-left: 30px;
+}
+
+.register {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login-back-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container .menu-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-back {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.store-discreption {
+  width: 196px;
+
+  margin-left: 183px;
+  margin-top: 50px;
+}
+
+.phone-back {
+  text-align: center;
+  width: 270px;
+
+  margin-top: 50px;
+}
+
+.phone-number {
+  background-image: url(img/icon-phone.png);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
 }
