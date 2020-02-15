@@ -77,7 +77,7 @@ a {
   background-color: #f1f5f7;	
 }
 
-.top-background {
+.menu-top {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -204,6 +204,8 @@ a {
   line-height: 30px;
   font-weight: bold;
   text-align: left;
+
+  color: #ffffff;
 }
 
 .list .button {
@@ -363,8 +365,8 @@ a {
   color: #f3f7f9;
 }
 
-.footer-nav,
-.footer-offers {
+.footer-nav li,
+.footer-offers li {
   font-size: 18px;
   line-height: 24px;
   text-align: left;
@@ -372,11 +374,11 @@ a {
   list-style: none;
 }
 
-.footer-nav {
+.footer-nav li {
   color: #f1f5f7;
 }
 
-.footer-offers {
+.footer-offers li {
   color: #ffd180;
 }
 
@@ -591,9 +593,15 @@ a {
 }
 
 
+.head {
+  width: 940px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
-.menu-back {
+.menu-top {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   min-height: 42px;
 }
@@ -651,11 +659,6 @@ a {
   justify-content: space-around;
 }
 
-.menu-back {
-  width: 940px;
-  margin: 0 auto;
-}
-
 .store-discreption {
   width: 196px;
 
@@ -674,4 +677,20 @@ a {
   background-image: url(img/icon-phone.png);
   background-position: 0% 50%;
   background-repeat: no-repeat;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.yellow-back,
+.blue-back,
+.pink-back,
+.green-back,
+.yellow {
+  width: 300px;
+
+  margin-left: 20px;
 }
