@@ -10,20 +10,18 @@
     <div class="white-background">
       <header class="head">
         <section class="top-background">
-          <div class="menu-top">
+          <div class="container">
             <div class=logo-wrapper>
-            <div class="logo">
-              <a href=""><img src="img/logo.svg" width="109" height="19" alt="логотип техномарт"></a>
-            </div>
-            <div class="search">
-              <img class="icon-search" src="img/icon-search.png" width="17" height="17" alt="поиск">
+              <a class="logo" href=""><img src="img/logo.svg" width="109" height="19" alt="логотип техномарт"></a>
+              <div class="search">
+                <img class="icon-search" src="img/icon-search.png" width="17" height="17" alt="поиск">
               <div>
 		            <label for="search-box">Поиск:</label>
 		            <input id="search-box" type="text" name="search">
 		          </div>
             </div>
             </div>
-            <div class="bookmark-wrapper">
+            <div class="user-navigation">
             <div class="bookmark">
               <p>
                 Закладки: 0
@@ -41,60 +39,68 @@
           </div>
         </section>
         <section>
-          <div class="store-discreption-wrapper">
-          <p class="store-discreption">
-            Интернет-магазин
-            строительных материалов
-            и инструментов для ремонта
-          </p>
-          <div class="phone-back-wrapper">
-            <div class="phone-back">
-              <p class="phone-number">
-                <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-              </p>
-              <a href="tel:+7(812)555-05-55"><img class="icon-phone" src="img/icon-phone.png" width="19" height="19" alt="иконка телефон">
+          <div class="container">
+           <div class="store-wrapper">
+            <p class="store-discreption">
+             Интернет-магазин
+             строительных материалов
+             и инструментов для ремонта
+            </p>
+            <div class="phone-back-wrapper">
+             <div class="phone-back">
+               <a class="phone-number" href="tel:+7(812)555-05-55">
+                <img class="icon-phone" src="img/icon-phone.png" width="19" height="19" alt="иконка телефон">
+                +7(812)555-05-55
+               </a>
+             </div>
+             <address class="adds">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
-            <address class="adds">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          </div>
-          <div class="login-back-wrapper">
-          <div class="login-back">
-            <button class="log-in" type="button">Войти</button>
-            <img class="icon-login" src="img/icon-login.png" width="20" height="17" alt="иконка входа">
-          </div>
-          <button class="register">Регистрация</button>
-          </div>
+            <div class="login-back-wrapper">
+             <div class="login-back">
+              <a class="log-in">
+                Войти
+                <img class="icon-login" src="img/icon-login.png" width="20" height="17" alt="иконка входа">
+              </a>
+             </div>
+            <button class="register">Регистрация</button>
+            </div>
+           </div>
           </div>
         </section>
-        <nav class="menu-back">
-          <div class="container">
-          <ul class="menu-section">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          </div>
+        <div class="container">
+         <nav class="menu-back">
+           <ul class="menu-section">
+             <li><a href="#">Главная</a></li>
+             <li><a href="#">Компания</a></li>
+             <li><a href="catalog.html">Каталог</a></li>
+             <li><a href="#">Новости</a></li>
+             <li><a href="#">Спецпредложения</a></li>
+             <li><a href="#">Доставка</a></li>
+             <li><a href="#">Контакты</a></li>
+           </ul>
         </nav>
+        </div>
       </header>
       <main>
         <section>
           <h2 class="visually-hidden">Наши предложения</h2>
-          <div class="list-wrapper">
-          <ul class="list">
+          <div class="container">
+           <ul class="list">
             <li class="yellow-back">
               <h3>Материалы</h3>
+              <a class="button" href="#">на любой вкус</a>
               <img src="img/icon-1.svg" width="44" height="65" atl="банка краски">
               <img class="new-flag" src="img/new-flag.png" width="60" height="59" alt="новинка">
-              <a class="button" href="#">на любой вкус</a>
             </li>
+            <div class="blue-back-wrapper">
             <li class="blue-back">
+              <div>
               <h3>Инструмент</h3>
-              <img src="img/icon-2.svg" width="75" height="61" atl="дрель">
               <a class="button" href="#">на все случаи</a>
+              </div>
+              <img src="img/icon-2.svg" width="75" height="61" atl="дрель">
             </li>
+            </div>
             <li class="pink-back">
               <h3>Техника</h3>
               <img src="img/icon-3.svg" width="78" height="62" atl="трактор">
@@ -118,7 +124,7 @@
               <img src="img/icon-right.svg" width="22" height="40" atl="вправо">
               <a class="button" href="#">открыть каталог</a>
             </li>
-          </ul>
+           </ul>
           </div>
         </section>
         <section>
@@ -126,7 +132,8 @@
             <h2 class="headline">Популярные товары:</h2>
             <a class="button" href="#">все популярные товары</a>
           </div>
-          <ul class="items">
+          <div class="container">
+           <ul class="items">
             <li class="item-background">
               <div class="item-image">
                 <img src="img/item-image.jpg" width="218" height="170" alt="Перфоратор">
@@ -168,13 +175,15 @@
               </div>
             </li>
           </ul>
+         </div>
         </section>
         <section>
           <div class="popular">
             <h2 class="headline">Популярные производители:</h2>
             <a class="button" href="#">все производители</a>
           </div>
-          <ul class="brands">
+          <div class="container">
+           <ul class="brands">
             <li class="brand-background">
               <a href="#"><img src="img/bosch.png" width="126" height="37" alt="bosch"></a>
             </li>
@@ -182,10 +191,10 @@
               <a href="#"><img src="img/makita.png" width="123" height="40" alt="makita"></a>
             </li>
             <li class="brand-background">
-              <a href="#"><img src="img/dewalt.png" width="146" height="44" alt="dewalt"></a>
+              <a href="#"><img src="img/de-walt.png" width="146" height="44" alt="dewalt"></a>
             </li>
             <li class="brand-background">
-              <a href="#"><img src="img/invalid-name.png" width="200" height="88" alt="интерскол"></a>
+              <a href="#"><img src="img/interskol.png" width="200" height="88" alt="интерскол"></a>
             </li>
             <li class="brand-background">
               <a href="#"><img src="img/hitachi.png" width="169" height="31" alt="hitachi"></a>
@@ -200,6 +209,7 @@
               <a href="#"><img src="img/metabo.png" width="204" height="69" alt="metabo"></a>
             </li>
           </ul>
+         </div>
         </section>
         <div class="service-back">
           <section>
@@ -265,7 +275,7 @@
       <footer>
         <div class="footer-nav-back">
           <div class="logo footer-logo">
-            <img src="img/logo.png" width="138" height="23" alt="логотип техномарт">
+            <img src="img/logo.svg" width="138" height="23" alt="логотип техномарт">
           </div>
           <p class="footer-address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
