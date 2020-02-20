@@ -136,7 +136,7 @@ a {
   color: #ee3643;
 }
 
-.phone-back {
+.phone-number {
   border: solid 3px #ffffff;
 }
 
@@ -155,7 +155,7 @@ a {
   color: #32425c;
 }
 
-.login-back,
+.log-in,
 .register {
   color: #000000;
   
@@ -365,31 +365,29 @@ a {
   color: #f3f7f9;
 }
 
-.footer-nav li,
-.footer-offers li {
-  font-size: 18px;
-  line-height: 24px;
-  text-align: left;
-
+.footer-nav,
+.footer-offers {
   list-style: none;
-}
-
-.footer-nav li {
-  color: #f1f5f7;
-}
-
-.footer-offers li {
-  color: #ffd180;
-}
-
-.footer-nav:hover,
-.footer-offers:hover {
-  text-decoration: underline;
 }
 
 .footer-nav,
 .footer-offers {
-  color: #ee3643;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.footer-nav a {
+  color: #f1f5f7;
+}
+
+.footer-offers a {
+  color: #ffd180;
+}
+
+.footer-nav a:hover,
+.footer-offers a:hover {
+  text-decoration: underline;
 }
 
 .footer-contacts {
@@ -588,7 +586,8 @@ a {
   border: solid 1px #e5e5e5;
 }
 
-.sorting {
+.sorting,
+.icon-dir {
   list-style: none;
 }
 
@@ -600,7 +599,6 @@ a {
 }
 
 .container {
-  display: block;
   width: 750px;
   margin: 0 auto;
 }
@@ -608,19 +606,12 @@ a {
 .top-background .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  min-height: 42px;
+  justify-content: space-between;
 }
 
 .logo {
   width: 175px;
   height: 35px;
-}
-
-.logo-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .bookmark,
@@ -636,12 +627,6 @@ a {
 
 .search {
   padding-left: 20px;
-}
-
-.user-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .store-wrapper {
@@ -681,17 +666,17 @@ a {
   margin-top: 50px;
 }
 
-.phone-back {
+.phone-number {
   text-align: center;
   width: 270px;
 
-  margin-top: 50px;
-}
-
-.phone-number {
   background-image: url(img/icon-phone.png);
   background-position: 0% 50%;
   background-repeat: no-repeat;
+}
+
+.phone-back-wrapper {
+  margin-top: 50px;
 }
 
 .container .list {
@@ -733,4 +718,48 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.container .popular {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-company .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-offers-wrapper .footer-offers,
+.footer-nav-wrapper .footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts .сontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
