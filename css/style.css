@@ -60,6 +60,17 @@ html {
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -83,6 +94,7 @@ a {
 
 .head {
   background-color: #f1f5f7;	
+  padding-bottom: 40px;
 }
 
 .top-background {
@@ -110,6 +122,9 @@ a {
 }
 
 .top-background .order-button {
+  font-family: "Cuprum";
+  font-size: 17px;
+  line-height: 18px;
   color: #ffffff;
 
   background-color: #63a63e;
@@ -207,7 +222,7 @@ a {
   color: #1d2739;
 }
 
-.list {
+.lists {
   list-style: none;
 }
 
@@ -220,27 +235,27 @@ a {
   color: #ffffff;
 }
 
-.list .button {
+.lists .button {
   background-color: #000000;
 }
 
-.yellow-back {
+.yellow {
   background-color: #ffbf47;
 }
 
-.blue-back {
+.blue {
   background-color: #3bbce3;
 }
 
-.pink-back {
+.pink {
   background-color: #dc91d8;
 }
 
-.green-back {
+.green {
   background-color: #8ed78f;
 }
 
-.yellow {
+.yellow-back {
   background-color: #ffc047;
 }
 
@@ -287,7 +302,10 @@ a {
   line-height: 18px;
   color: #ffffff;
 
-  background-image: url("img/price.svg");
+  background-image: url("../img/price.svg");
+  background-size: 141px 38px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .brands {
@@ -295,6 +313,8 @@ a {
 }
 
 .brand-background {
+  width: 220px;
+  height: 145px;
   border: solid 1px #aeaeae;
 }
 
@@ -722,30 +742,35 @@ a {
   margin-top: 50px;
 }
 
+.container .lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  flex-wrap: wrap;
+
+  padding-top: 25px;
+}
+
 .container .list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
-.yellow-back,
-.blue-back,
-.pink-back,
-.green-back,
-.yellow {
-  width: 300px;
-  margin-left: 20px;
-}
-
-.blue-back-wrapper .blue-back {
+.yellow-wrapper .yellow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.blue-back img {
+.blue-wrapper .blue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.blue img {
   padding-top: 30px;
   padding-right: 20px;
 }
