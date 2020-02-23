@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Cuprum";
 
-  src: url("fonts/Cuprum-Regular.woff2") format("woff2"),
-    url("fonts/Cuprum-Regular.woff") format("woff"); 
+  src: url("../fonts/Cuprum-Regular.woff2") format("woff2"),
+    url("../fonts/Cuprum-Regular.woff") format("woff"); 
      
 	font-weight: normal;
 	font-display: swap; 
@@ -11,8 +11,8 @@
 @font-face {
   font-family: "Cuprum";
 
-  src: url("fonts/Cuprum-Italic.woff2") format("woff2"),
-    url("fonts/Cuprum-Italic.woff") format("woff");
+  src: url("../fonts/Cuprum-Italic.woff2") format("woff2"),
+    url("../fonts/Cuprum-Italic.woff") format("woff");
 	
 	font-weight: normal;
 	font-style: italic; 
@@ -32,8 +32,8 @@
 @font-face {
   font-family: "PTSans";
 
-  src: url("fonts/PTSans-Bold.woff2") format("woff2"), 
-    url("fonts/PTSans-Bold.woff") format("woff");
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), 
+    url("../fonts/PTSans-Bold.woff") format("woff");
 	
 	font-weight: bold;
 	font-display: swap;
@@ -42,8 +42,8 @@
 @font-face {
   font-family: "PTSans";
 
-  src: url("fonts/PTSans-Regular.woff2") format("woff2"),
-    url("fonts/PTSans-Regular.woff") format("woff");
+  src: url("../fonts/PTSans-Regular.woff2") format("woff2"),
+    url("../fonts/PTSans-Regular.woff") format("woff");
      
 	font-weight: normal;
 	font-display: swap;
@@ -153,7 +153,6 @@ a {
 .phone-number {
   font-size: 21px;
   line-height: 21px;
-  text-align: left;
   letter-spacing: 0.42px;
   color: #e9292a;
 }
@@ -161,12 +160,15 @@ a {
 .adds {
   font-size: 14px;
   line-height: 24px;
+  font-style: normal;
   text-align: center;
   color: #32425c;
 }
 
 .log-in,
 .register {
+  font-size: 21px;
+  line-height: 21px;
   color: #000000;
   
   background-color: #ffffff;
@@ -618,30 +620,35 @@ a {
 .logo {
   width: 175px;
   height: 35px;
+
+  background-image: url("../img/logo.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 109px 19px;
 }
 
 .bookmark,
 .cart {
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .bookmark {
-  background-image: url(img/icon-bookmark.png);
+  background-image: url("../img/icon-bookmark.png");
   background-position: 0% 50%;
   background-repeat: no-repeat;
 }
 
 .search {
-  background-image: url(img/icon-search.png);
+  background-image: url("../img/icon-search.png");
   background-position: 0% 50%;
   background-repeat: no-repeat;
 
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .cart {
-  background-image: url(img/cart-icon.png);
+  background-image: url("../img/cart-icon.png");
   background-position: 0% 50%;
   background-repeat: no-repeat;
 }
@@ -653,10 +660,21 @@ a {
 }
 
 .log-in {
-  margin-left: 30px;
+  background-image: url("../img/icon-login.png");
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+
+  padding-left: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
 }
 
 .register {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
   margin-left: 10px;
 }
 
@@ -664,6 +682,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .order-button {
@@ -673,7 +693,10 @@ a {
 .container .menu-section {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .store-discreption {
@@ -684,14 +707,18 @@ a {
 
 .phone-number {
   text-align: center;
-  width: 270px;
 
-  background-image: url(img/icon-phone.png);
-  background-position: 0% 50%;
+  background-image: url("../img/icon-phone.png");
+  background-position: 5% 50%;
   background-repeat: no-repeat;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .phone-back-wrapper {
+  display: flex;
+  flex-direction: column;
   margin-top: 50px;
 }
 
