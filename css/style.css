@@ -16,17 +16,17 @@
 	
 	font-weight: normal;
 	font-style: italic; 
-    font-display: swap;	
+  font-display: swap;	
 }
 
 @font-face {
   font-family: "Cuprum";
 
-  src: url("fonts/Cuprum-Bold.woff2") format("woff2"),
-    url("fonts/Cuprum-Bold.woff") format("woff"); 
+  src: url("../fonts/Cuprum-Bold.woff2") format("woff2"),
+    url("../fonts/Cuprum-Bold.woff") format("woff"); 
 	
 	font-weight: bold;
-    font-display: swap;	
+  font-display: swap;	
 }
 
 @font-face {
@@ -54,6 +54,14 @@ body {
   padding: 0;
   
   font-family: "Cuprum", Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 a {
@@ -102,6 +110,8 @@ a {
 }
 
 .top-background .order-button {
+  color: #ffffff;
+
   background-color: #63a63e;
   border: none;
 }
@@ -591,15 +601,10 @@ a {
   list-style: none;
 }
 
-.head,
-.top-background {
+.container {
   width: 940px;
   padding-right: 10px;
   padding-left: 10px;
-}
-
-.container {
-  width: 750px;
   margin: 0 auto;
 }
 
@@ -607,6 +612,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -617,6 +623,7 @@ a {
 .bookmark,
 .cart {
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .bookmark {
@@ -626,13 +633,23 @@ a {
 }
 
 .search {
+  background-image: url(img/icon-search.png);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+
   padding-left: 20px;
+}
+
+.cart {
+  background-image: url(img/cart-icon.png);
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
 }
 
 .store-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .log-in {
@@ -661,7 +678,6 @@ a {
 
 .store-discreption {
   width: 196px;
-
   margin-left: 50px;
   margin-top: 50px;
 }
@@ -684,6 +700,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .yellow-back,
@@ -692,7 +709,6 @@ a {
 .green-back,
 .yellow {
   width: 300px;
-
   margin-left: 20px;
 }
 
@@ -718,6 +734,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .container .popular {
@@ -725,17 +742,17 @@ a {
   justify-content: space-between;
 }
 
-.about-company .container {
+.container .about-company {
   display: flex;
   flex-direction: column;
 }
 
-.contacts .container {
+.container .contacts {
   display: flex;
   flex-direction: column;
 }
 
-.company {
+.company .container {
   display: flex;
   flex-direction: row;
 }
@@ -745,6 +762,16 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.container .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-back .container {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-navigation {
