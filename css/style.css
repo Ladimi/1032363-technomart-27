@@ -75,8 +75,17 @@ html {
   box-sizing: inherit;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .button {
@@ -90,6 +99,10 @@ a {
 
   background-color: #ee3643;
   border: none;
+  border-radius: 3px;
+
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .head {
@@ -235,7 +248,7 @@ a {
   color: #ffffff;
 }
 
-.lists .button {
+.lists .feauteres {
   background-color: #000000;
 }
 
@@ -267,8 +280,17 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-align: left;
+  font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
+
+  padding-left: 20px;
+}
+
+.popular .button {
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: 25px;
 }
 
 .items {
@@ -315,7 +337,7 @@ a {
 .brand-background {
   width: 220px;
   height: 145px;
-  border: solid 1px #aeaeae;
+  border: solid 1px #eaeaea;
 }
 
 .brand-background:hover {
@@ -336,6 +358,7 @@ a {
 .caption {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-align: left;
   text-transform: uppercase;
   color: #000000;
@@ -710,6 +733,11 @@ a {
   height: 35px;
 }
 
+.menu-back {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .container .menu-section {
   display: flex;
   justify-content: space-between;
@@ -744,12 +772,12 @@ a {
 
 .container .lists {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   
   flex-wrap: wrap;
 
-  padding-top: 25px;
+  padding-top: 60px;
 }
 
 .container .list {
@@ -791,12 +819,49 @@ a {
 
 .container .popular {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .container .about-company {
   display: flex;
   flex-direction: column;
+
+  padding-right: 30px;
+}
+
+.about-company .delivery-var p {
+  padding-right: 150px;
+}
+
+.delivery-var {
+  padding-bottom: 25px;
+}
+
+.delivery-var .good-store {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.delivery-var p:nth-child(2) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.about-company .button {
+  width: 220px;
+}
+
+.contacts .good-store {
+  padding-right: 80px;
+  padding-bottom: 30px;
+}
+
+.contacts a {
+  padding-bottom: 30px;
 }
 
 .container .contacts {
@@ -807,6 +872,8 @@ a {
 .company .container {
   display: flex;
   flex-direction: row;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-offers-wrapper .footer-offers,
