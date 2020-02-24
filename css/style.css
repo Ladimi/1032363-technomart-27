@@ -829,7 +829,6 @@ ul {
 .container .about-company {
   display: flex;
   flex-direction: column;
-
   padding-right: 30px;
 }
 
