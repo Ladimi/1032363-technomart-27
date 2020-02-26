@@ -75,17 +75,17 @@ html {
   box-sizing: inherit;
 }
 
-p {
+.container p {
+  margin: 0;
+}
+
+.container ul {
+  padding: 0;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
 }
 
 .button {
@@ -298,6 +298,7 @@ ul {
 }
 
 .item-background {
+  width: 216px;
   font-family: "PTSans", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
@@ -306,7 +307,13 @@ ul {
   border: solid 1px #eaeaea;
 }
 
-.item-name {
+.items h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.item-name,
+.item-name-new {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -335,7 +342,7 @@ ul {
 }
 
 .brand-background {
-  width: 220px;
+  width: 216px;
   height: 145px;
   border: solid 1px #eaeaea;
 }
@@ -460,6 +467,11 @@ ul {
 
 .text-style {
   color: ffd180;
+}
+
+.mailhtmlacademyru span,
+.htmlacademyru span a {
+  color: #ffd180;
 }
 
 .vk-icon,
@@ -663,6 +675,7 @@ ul {
 .logo {
   width: 175px;
   height: 35px;
+  box-shadow: 0px 5px 0 0 #B6242F;
 
   background-image: url("../img/logo.svg");
   background-position: 50% 50%;
@@ -734,6 +747,8 @@ ul {
 }
 
 .menu-back {
+  box-shadow: 0px 5px 0 0 #293449;
+
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -747,7 +762,7 @@ ul {
   padding-right: 50px;
 }
 
-.store-discreption {
+.container .store-discreption {
   width: 196px;
   margin-left: 50px;
   margin-top: 50px;
@@ -786,6 +801,10 @@ ul {
   justify-content: space-between;
 }
 
+.slider-image p {
+  margin: 0;
+}
+
 .yellow-wrapper .yellow {
   display: flex;
   flex-direction: row;
@@ -807,6 +826,9 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .container .brands {
@@ -815,15 +837,82 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .container .popular {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  margin-top: 50px;
-  margin-bottom: 50px;
+.brand-background {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  margin-bottom: 20px;
+}
+
+.bosch {
+  background-image: url("../img/bosch.png");
+}
+
+.makita {
+  background-image: url("../img/makita.png");
+}
+
+.de-walt {
+  background-image: url("../img/de-walt.png");
+}
+
+.interskol {
+  background-image: url("../img/interskol.png");
+}
+
+.hitachi {
+  background-image: url("../img/hitachi.png");
+}
+
+.lg {
+  background-image: url("../img/lg.png");
+}
+
+.aeg {
+  background-image: url("../img/aeg.png");
+}
+
+.metabo {
+  background-image: url("../img/metabo.png");
+}
+
+.item-background .new {
+  position: absolute;
+}
+
+.new-flag {
+  position: relative;
+  right: -76px;
+  top: -1px;
+}
+
+.items .item-name-new {
+  margin-top: 112px;
+}
+
+.old-price,
+.price {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.items li:nth-child(3) .price {
+  margin-top: 40px;
 }
 
 .container .about-company {
@@ -875,11 +964,25 @@ ul {
   padding-bottom: 50px;
 }
 
-.footer-offers-wrapper .footer-offers,
 .footer-nav-wrapper .footer-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.footer-offers-wrapper .footer-offers {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.footer-logo {
+  width: 220px;
+  height: 68px;
+
+  background-image: url("../img/logo-footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container .footer-wrapper {
@@ -890,11 +993,31 @@ ul {
 .footer-nav-back .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
+  padding-bottom: 30px;
 }
 
 .footer-navigation {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-nav li:not(:first-child):not(:last-child),
+.footer-offers li:not(:first-child):not(:last-child) {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.footer-nav li:first-child,
+.footer-offers li:first-child {
+  padding-right: 30px;
+}
+
+.footer-nav li:last-child,
+.footer-offers li:last-child {
+  padding-left: 30px;
 }
 
 .footer-contacts .сontainer {
@@ -903,8 +1026,17 @@ ul {
   justify-content: space-between;
 }
 
+.copy,
+.htmlacademyru,
+.mailhtmlacademyru,
+.footer-address {
+  white-space: pre-line;
+}
+
 .socials {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  margin-top: 20px;
 }
