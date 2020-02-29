@@ -162,6 +162,10 @@ a {
   border: none;
 }
 
+.search input:hover {
+  background-color: #212a3a;
+}
+
 .search input:focus {
   background-color: #ffffff;
 }
@@ -673,8 +677,8 @@ a {
 }
 
 .logo {
-  width: 175px;
-  height: 35px;
+  width: 220px;
+  height: 47px;
   box-shadow: 0px 5px 0 0 #B6242F;
 
   background-image: url("../img/logo.svg");
@@ -685,27 +689,31 @@ a {
 
 .bookmark,
 .cart {
-  padding-right: 20px;
-  padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .bookmark {
   background-image: url("../img/icon-bookmark.png");
-  background-position: 0% 50%;
+  background-position: 10% 50%;
   background-repeat: no-repeat;
 }
 
 .search {
   background-image: url("../img/icon-search.png");
-  background-position: 0% 50%;
+  background-position: 5% 50%;
   background-repeat: no-repeat;
-
-  padding-left: 30px;
+  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
 }
 
 .cart {
   background-image: url("../img/cart-icon.png");
-  background-position: 0% 50%;
+  background-position: 10% 50%;
   background-repeat: no-repeat;
 }
 
@@ -743,7 +751,10 @@ a {
 }
 
 .order-button {
-  height: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .menu-back {
@@ -915,6 +926,62 @@ a {
   margin-top: 40px;
 }
 
+.service-back .container {
+  padding-top: 40px;
+}
+
+.good-store {
+  white-space: pre-line;
+}
+
+.service-item .good-store {
+  margin-left: 80px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  
+  position: relative;
+}
+
+.service-item .item-service {
+  margin-top: 74px;
+  padding-bottom: 100px;
+}
+
+.active-service,
+.service {
+  padding-top: 20px;
+  padding-right: 140px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.active-service {
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+}
+
+.service {
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+}
+
+.shadow {
+  margin-top: 28px;
+}
+
+.service-item .headline {
+  margin-left: 60px;
+  margin-top: 75px;
+  padding-left: 20px;
+}
+
+.delivery {
+  position: absolute;
+  top: 45px;
+  right: 30px;
+}
+
 .container .about-company {
   display: flex;
   flex-direction: column;
@@ -980,9 +1047,10 @@ a {
   width: 220px;
   height: 68px;
 
-  background-image: url("../img/logo-footer.png");
+  background-image: url("../img/footer-logo.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 138px 23px;
 }
 
 .container .footer-wrapper {
@@ -1037,5 +1105,30 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+.vk-icon,
+.fb-icon,
+.insta-icon {
+  width: 42px;
+  height: 42px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-right: 5px;
+  border-radius: 50px;
+}
+
+.vk-icon {
+  background-image: url("../img/vk-icon.svg");
+}
+
+.fb-icon {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.insta-icon {
+  background-image: url("../img/insta-icon.svg");
 }
