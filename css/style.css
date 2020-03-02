@@ -277,7 +277,7 @@ a {
 }
 
 .popular {
-  background-color: #f9f5f0;
+  background-color: #f2f6f8;
 }
 
 .headline {
@@ -721,6 +721,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  padding-bottom: 20px;
 }
 
 .log-in {
@@ -774,9 +776,9 @@ a {
 }
 
 .container .store-discreption {
-  width: 196px;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 25px;
+  white-space: pre-line;
 }
 
 .phone-number {
@@ -1132,3 +1134,131 @@ a {
 .insta-icon {
   background-image: url("../img/insta-icon.svg");
 }
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  list-style: none;
+}
+
+.service-back .container {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.service-back h2 {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.service-back p {
+  margin: 0;
+}
+
+.pagination {
+  margin-left: 580px;
+  margin-bottom: 60px;
+}
+
+.pagination li a {
+  color: #000000;
+}
+
+.pagination li {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #e5e5e5;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 4px;
+}
+
+.pagination .activ {
+  background-color: #ee3643;
+  color: #fff;
+}
+
+.pagination li:last-child {
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cart-full {
+  background-color: #ee3643;
+
+  padding-right: 31px;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.dot {
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+  border-radius: 3px;
+}
+
+.user-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  padding-left: 20px;
+}
+
+.user-back {
+  margin-top: 50px;
+}
+
+.user-back p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 60px;
+}
+
+.user-name {
+  background-image: url("../img/icon-user.png");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+}
+
+.my-orders {
+  padding-right: 15px;
+}
+
+.account {
+  padding-left: 15px;
+}
+
+.container .breadcrambs {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.breadcrambs a {
+  color: #000000;
+}
+
