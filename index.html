@@ -71,58 +71,85 @@
         <section>
           <h2 class="visually-hidden">Наши предложения</h2>
           <div class="container">
-            <ul class="lists">
-             <div class="yellow-wrapper">
-              <li class="list yellow">
-                <h3>Материалы</h3>
-                <a class="button feauteres" href="#">на любой вкус</a>
-                <div>
-                  <img src="img/icon-1.svg" width="44" height="65" atl="банка краски">
-                </div>
-                <img class="new-flag" src="img/new-flag.png" width="60" height="59" alt="новинка">
-              </li>
-             </div>
-             <div class="blue-wrapper">
-              <li class="list blue">
-               <div>
-               <h3>Инструмент</h3>
-               <a class="button feauteres" href="#">на все случаи</a>
-               </div>
-               <div>
-                 <img src="img/icon-2.svg" width="75" height="61" atl="дрель">
-               </div>
-              </li>
-             </div>
-            <li class="list pink">
-              <h3>Техника</h3>
-              <div>
-                <img src="img/icon-3.svg" width="78" height="62" atl="трактор">
-              </div>
-              <a class="button feauteres" href="#">для стройки</a>
-            </li>
-            <li class="list green">
-              <h3>Скидка 50%</h3>
-              <div>
-                <img src="img/icon-4.svg" width="59" height="72" atl="корзина">
-              </div>
-              <a class="button feauteres" href="#">на 350 товаров</a>
-            </li>
-            <li class="list yellow-back">
-              <h3>Доставка</h3>
-              <div>
-                <img src="img/icon-5.svg" width="78" height="63" atl="машина">
-              </div>
-              <a class="button feauteres" href="#">бесплатно</a>
-            </li>
-            <li class="slider-image">
-              <h2>Дрель</h2>
-              <p>Соседям на радость!</p>
-              <img src="img/slider-image.jpg" width="620" height="266" atl="мужчина с дрелью">
-              <img src="img/icon-left.svg" width="22" height="40" atl="влево">
-              <img src="img/icon-right.svg" width="22" height="40" atl="вправо">
-              <a class="button" href="#">открыть каталог</a>
-            </li>
-           </ul>
+           <div class="feauteres-wrapper">
+            <div class="lists-wrapper">
+              <ul class="lists">
+                  <li class="list yellow">
+                    <h3>Материалы</h3>
+                    <a class="button feauteres" href="#">на любой вкус</a>
+                    <div>
+                      <img src="img/icon-1.svg" width="44" height="65" atl="банка краски">
+                    </div>
+                    <img class="new-flag" src="img/new-flag.png" width="60" height="59" alt="новинка">
+                  </li>
+                  <li class="list blue">
+                    <div>
+                      <h3>Инструмент</h3>
+                      <a class="button feauteres" href="#">на все случаи</a>
+                    </div>
+                    <div>
+                      <img src="img/icon-2.svg" width="75" height="61" atl="дрель">
+                    </div>
+                  </li>
+                  <li>
+                    <div class="wrap">
+                      <div class="slider">
+                        <div class="slider-controls">
+                          <label class="icon-left" for="product-1">Назад</label>
+                          <label class="icon-right" for="product-2">Вперед</label>
+                        </div>
+                        <input class="visually-hidden" type="radio" id="product-1" name="slides" checked>
+                        <input class="visually-hidden" type="radio" id="product-2" name="slides">
+                        <ul class="slider-list">
+                          <li class="slider-item slide" id="slide1">
+                            <h2 class="slide-title">
+                              Дрель
+                            </h2>
+                            <p>
+                              Соседям на радость!
+                            </p>
+                            <a class="button slide-button" href="#">открыть каталог</a>
+                          </li>
+                          <li class="slider-item slide" id="slide2">
+                            <h2 class="slide-title">
+                              Перфораторы
+                            </h2>
+                            <p>
+                              Настоящие мужские игрушки
+                            </p>
+                            <a class="button slide-button" href="#">открыть каталог</a>
+                          </li>
+                      </div>
+                    </div>
+                  </li>  
+              </ul>
+            </div>
+            <div class="lists-wrapper2">
+              <ul class="lists">
+                <li class="list pink">
+                  <h3>Техника</h3>
+                  <div>
+                    <img src="img/icon-3.svg" width="78" height="62" atl="трактор">
+                  </div>
+                  <a class="button feauteres" href="#">для стройки</a>
+                </li>
+                <li class="list green">
+                  <h3>Скидка 50%</h3>
+                  <div>
+                    <img src="img/icon-4.svg" width="59" height="72" atl="корзина">
+                  </div>
+                  <a class="button feauteres" href="#">на 350 товаров</a>
+                </li>
+                <li class="list yellow-back">
+                  <h3>Доставка</h3>
+                  <div>
+                    <img src="img/icon-5.svg" width="78" height="63" atl="машина">
+                  </div>
+                  <a class="button feauteres" href="#">бесплатно</a>
+                </li>
+              </ul>
+            </div>
+           </div>
           </div>
         </section>
         <section>
@@ -246,7 +273,6 @@
               поднимая его на ваш этаж!
             </p>
           </section>
-          <img class="delivery" src="img/delivery.png" width="468" height="261" alt="машина доставки">
          </div>
         </div>
         </div> 
