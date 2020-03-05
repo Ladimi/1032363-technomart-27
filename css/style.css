@@ -802,18 +802,6 @@ a {
   margin: 0;
 }
 
-.yellow-wrapper .yellow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.blue-wrapper .blue {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .blue img {
   padding-top: 30px;
   padding-right: 20px;
@@ -1245,6 +1233,15 @@ a {
   color: #000000;
 }
 
+.wrap {
+  width: 620px;
+  height: 266px;
+  
+  position: relative;
+  
+  background-color: #32425c;
+ }
+
 .slider {
   position: relative;
   
@@ -1257,10 +1254,6 @@ a {
   padding: 0;
   
   list-style: none;
-}
-
-.slide {
-  display: none;
 }
 
 .slide-title {
@@ -1288,7 +1281,7 @@ a {
 .slider-controls {
   position: absolute;
   bottom: 63px;
-  left: 0;
+
   z-index: 20;
   
   font-size: 0;
@@ -1325,4 +1318,101 @@ a {
 #product-2:checked ~ .wrap {
   background-color: #8996a6;
   background-image: url("img/slider-image2.jpg");
+}
+
+.feauteres-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.yellow-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yellow {
+  position: relative;
+  width: 50%;
+}
+
+.list h3 {
+  padding-top: 25px;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.list a {
+  margin-left: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  opacity: 0.1;
+}
+
+.list .new-flag {
+  position: absolute;
+  left: 240px;
+}
+
+.blue,
+.pink,
+.green,
+.yellow-back {
+  position: relative;
+}
+
+.blue {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.icon-1.
+.icon-2,
+.icon-3,
+.icon-4,
+.icon-5 {
+  position: absolute;
+  right: 15%;
+  top: 30%;
+}
+
+.lists-wrapper2 {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.filter-wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.filter-back {
+  padding-top: 10px;
+  padding-right: 130px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  background-color: #f7f3ec;
+}
+
+.filter-wrapper1 h3 {
+  margin: 0;
+}
+
+.sort-back {
+  display: flex;
+  padding-top: 10px;
+}
+
+.sorting,
+.icon-dir {
+  display: flex;
 }
