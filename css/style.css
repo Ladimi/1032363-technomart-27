@@ -244,6 +244,8 @@ a {
 }
 
 .list {
+  padding-bottom: 25px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -252,8 +254,17 @@ a {
   color: #ffffff;
 }
 
+.lists h3 {
+  padding-bottom: 20px;
+}
+
 .lists .feauteres {
   background-color: #000000;
+}
+
+.lists img {
+  position: absolute;
+  right: -20px;
 }
 
 .yellow {
@@ -814,11 +825,6 @@ a {
 
 .slider p {
   margin: 0;
-}
-
-.blue img {
-  padding-top: 30px;
-  padding-right: 20px;
 }
 
 .container .items {
