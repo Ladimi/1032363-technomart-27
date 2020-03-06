@@ -892,8 +892,8 @@ a {
 
 .new-flag {
   position: relative;
-  right: -76px;
-  top: -1px;
+  right: -77px;
+  top: 0px;
 }
 
 .items .item-name-new {
@@ -910,7 +910,7 @@ a {
   margin-bottom: 20px;
 }
 
-.items li:nth-child(3) .price {
+.items li:nth-child(3n) .price {
   margin-top: 40px;
 }
 
@@ -1381,6 +1381,8 @@ a {
 .list .new-flag {
   position: absolute;
   left: 240px;
+  right: -76px;
+  top: 0px;
 }
 
 .blue,
@@ -1431,8 +1433,8 @@ a {
   background-color: #f7f3ec;
 }
 
-.price-filter .filter-back {
-  padding-right: 70px;
+.price-filter .range {
+  padding-right: 50px;
 }
 
 .filter-wrapper1 h3 {
@@ -1502,8 +1504,8 @@ fieldset {
   border: none;
 }
 
-.price-filter {
-  margin-bottom: 25px;
+.filter-wrapper2 .price-filter {
+  border-bottom: 1px solid #f7f3ec;
 }
 
 .price-filter h3 {
@@ -1516,10 +1518,7 @@ fieldset {
 
 .filter legend {
   padding-top: 15px;
-  padding-right: 70px;
   padding-bottom: 10px;
-
-  border-top: 1px solid #f7f3ec;
 }
 
 .filter .fieldset ul {
@@ -1527,15 +1526,13 @@ fieldset {
 }
 
 fieldset li {
+  width: max-content;
   padding-bottom: 10px;
 }
 
 fieldset:nth-child(2) {
   padding-top: 15px;
-  padding-right: 130px;
   padding-bottom: 10px;
-
-  border-top: 1px solid #f7f3ec;
 }
 
 fieldset:nth-child(2) ul {
@@ -1549,4 +1546,30 @@ fieldset:nth-child(2) ul {
   padding-left: 40px;
 
   text-transform: uppercase;
+}
+
+.sort-wrapper ul {
+  flex-wrap: wrap;
+}
+
+.filter legend:nth-child(1) {
+  padding-right: 65px;
+}
+
+.filter .fieldset legend:nth-child(2) {
+  padding-right: 130px;
+}
+
+.sort-wrapper {
+  margin-left: 21px;
+}
+
+.sort-wrapper li {
+  margin-bottom: 20px;
+}
+
+.filter .filter-checkbox {
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #f7f3ec;
 }
