@@ -173,6 +173,10 @@ a {
   cursor: pointer;
 }
 
+.input[type="search"]::placeholder {
+  color: #ffffff;
+}
+
  .container .search:focus {
   background-color: #ffffff;
   border: none;
@@ -187,17 +191,16 @@ a {
 }
 
 .phone-number {
-  border: solid 3px #ffffff;
-}
-
-.phone-number {
   font-size: 21px;
   line-height: 21px;
   letter-spacing: 0.42px;
   color: #e9292a;
+  border: solid 3px #ffffff;
 }
 
 .adds {
+  padding-top: 5px;
+
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
@@ -765,23 +768,28 @@ a {
   flex-direction: row;
   justify-content: space-between;
 
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
 .log-in {
+  width: 120px;
+  height: 45px;
+
   background-image: url("../img/icon-login.png");
-  background-position: 5% 50%;
+  background-position: 15% 40%;
   background-repeat: no-repeat;
 
-  padding-left: 40px;
-  padding-bottom: 10px;
+  padding-left: 50px;
   padding-top: 10px;
   padding-right: 20px;
 }
 
 .register {
+  width: 150px;
+  height: 45px;
+
   padding-left: 20px;
-  padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 20px;
   margin-left: 10px;
@@ -791,8 +799,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 50px;
-  padding-bottom: 40px;
 }
 
 .order-button {
@@ -820,11 +826,15 @@ a {
 
 .container .store-discreption {
   margin-left: 50px;
-  margin-top: 25px;
-  white-space: pre-line;
+  
+  width: 195px;
+  height: 60px;
 }
 
 .phone-number {
+  width: 268px;
+  height: 43px;
+
   text-align: center;
 
   background-image: url("../img/icon-phone.png");
@@ -838,7 +848,6 @@ a {
 .phone-back-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
 }
 
 .slider p {
@@ -1227,13 +1236,12 @@ a {
   flex-direction: row;
   justify-content: left;
 
-  margin-top: 10px;
+  margin-top: 5px;
   padding-left: 20px;
 }
 
 .user-back {
   position: relative;
-  margin-top: 50px;
 }
 
 .user-back p {
