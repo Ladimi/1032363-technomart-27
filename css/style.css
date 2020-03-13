@@ -241,13 +241,36 @@ a {
   list-style: none;
 }
 
+.menu-section li {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.menu-section li:first-child {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+.menu-section li:last-child {
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 30px;
+}
+
+.menu-section li:hover,
+.menu-section li:active {
+  background-color: #1d2739;
+}
+
 .menu-section a {
   color: #ffffff;
 }
 
-.menu-section a:hover,
 .menu-section a:active {
-  color: #1d2739;
+  opacity: 50%;
 }
 
 .lists {
@@ -267,10 +290,6 @@ a {
 
 .lists h3 {
   padding-bottom: 20px;
-}
-
-.lists .feauteres {
-  background-color: #000000;
 }
 
 .lists img {
@@ -817,10 +836,6 @@ a {
 .container .menu-section {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .container .store-discreption {
@@ -1299,7 +1314,7 @@ a {
   margin-top: 20px;
 
   width: 620px;
-  height: 280px;
+  height: 295px;
   
   position: relative;
   
@@ -1410,10 +1425,24 @@ a {
 }
 
 .list a {
+  display: block;
+
   margin-left: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  width: 135px;
+
+  background-color: #000000;
   opacity: 0.1;
+}
+
+.list a:hover {
+  opacity: 0.2;
+}
+
+.list a:active {
+  opacity: 0.3;
 }
 
 .list .new-flag {
