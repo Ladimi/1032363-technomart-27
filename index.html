@@ -53,13 +53,13 @@
         <div class="container">
          <nav class="menu-back">
            <ul class="menu-section">
-             <li><a href="#">Главная</a></li>
-             <li><a href="#">Компания</a></li>
+             <li><a>Главная</a></li>
+             <li><a>Компания</a></li>
              <li><a href="catalog.html">Каталог</a></li>
-             <li><a href="#">Новости</a></li>
-             <li><a href="#">Спецпредложения</a></li>
-             <li><a href="#">Доставка</a></li>
-             <li><a href="#">Контакты</a></li>
+             <li><a>Новости</a></li>
+             <li><a>Спецпредложения</a></li>
+             <li><a>Доставка</a></li>
+             <li><a>Контакты</a></li>
            </ul>
         </nav>
         </div>
@@ -96,8 +96,8 @@
                       <input class="visually-hidden" type="radio" id="product-2" name="slides">
                       <div class="slider">
                         <div class="slider-controls">
-                          <label class="icon-left" for="product-1">Назад</label>
-                          <label class="icon-right" for="product-2">Вперед</label>
+                          <label class="icon-left" for="product-1"><span>Назад</span></label>
+                          <label class="icon-right" for="product-2"><span>Вперед</span></label>
                         </div>
                         <ul class="slider-list">
                           <li class="slider-item" id="slide1">
@@ -418,26 +418,97 @@
 		</div>
 	  </form>
   </section>
-  
-  <section class="top-background">
+
+  <section>
+    <h2 class="visually-hidden">Наши предложения</h2>
     <div class="container">
-      <div class="logo">
-        <a href="#"><img src="img/logo.svg" width="109px" height="19px" alt="логотип магазина Техномарт"></a>
+     <div class="feauteres-wrapper">
+      <div class="lists-wrapper">
+        <ul class="lists">
+          <div class="yellow-wrapper">
+            <li class="list yellow">
+              <h3>Материалы</h3>
+              <a class="button feauteres" href="#">
+                <p>на любой вкус</p>
+              </a>
+              <div class="icon-1">
+                <img src="img/icon-1.svg" width="44" height="65" atl="банка краски">
+              </div>
+              <img class="new-flag" src="img/new-flag.png" width="60" height="59" alt="новинка">
+            </li>
+            <li class="list blue">
+              <div>
+                <h3>Инструмент</h3>
+                <a class="button feauteres" href="#">на все случаи</a>
+              </div>
+              <div class="icon-2">
+                <img src="img/icon-2.svg" width="75" height="61" atl="дрель">
+              </div>
+            </li>
+          </div>
+            <li>
+              <div class="wrap">
+                <input class="visually-hidden" type="radio" id="product-1" name="slides" checked>
+                <input class="visually-hidden" type="radio" id="product-2" name="slides">
+                <div class="slider">
+                  <div class="slider-controls">
+                    <label class="icon-left" for="product-1"><span>Назад</span></label>
+                    <label class="icon-right" for="product-2"><span>Вперед</span></label>
+                  </div>
+                  <ul class="slider-list">
+                    <li class="slider-item" id="slide1">
+                      <h2 class="slide-title">
+                        Дрель
+                      </h2>
+                      <p>
+                        Соседям на радость!
+                      </p>
+                      <a class="button slide-button" href="#">открыть каталог</a>
+                    </li>
+                    <li class="slider-item" id="slide2">
+                      <h2 class="slide-title">
+                        Перфораторы
+                      </h2>
+                      <p>
+                        Настоящие мужские игрушки
+                      </p>
+                      <a class="button slide-button" href="#">открыть каталог</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>  
+        </ul>
       </div>
-        <input class="search" placeholder="Поиск:" id="search-box" type="text" name="search">
-      <div class="bookmark">
-        <a href="#">
-          Закладки: 0
-        </a>
+      <div class="lists-wrapper2">
+        <ul class="lists">
+          <li class="list pink">
+            <h3>Техника</h3>
+            <div class="icon-3">
+              <img src="img/icon-3.svg" width="78" height="62" atl="трактор">
+            </div>
+            <a class="button feauteres" href="#">для стройки</a>
+          </li>
+          <li class="list green">
+            <h3>Скидка 50%</h3>
+            <div class="icon-4">
+              <img src="img/icon-4.svg" width="59" height="72" atl="корзина">
+            </div>
+            <a class="button feauteres" href="#">на 350 товаров</a>
+          </li>
+          <li class="list yellow-back">
+            <h3>Доставка</h3>
+            <div class="icon-5">
+              <img src="img/icon-5.svg" width="78" height="63" atl="машина">
+            </div>
+            <a class="button feauteres" href="#">бесплатно</a>
+          </li>
+        </ul>
       </div>
-      <div class="cart">
-        <a href="#">
-          Корзина: 0
-        </a>
-      </div>
-      <a href="#" class="order-button">Оформить заказ</a>
+     </div>
     </div>
   </section>
+
 
   </body>
 </html>
