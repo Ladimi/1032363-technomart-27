@@ -265,7 +265,7 @@ a {
 }
 
 .menu-section li:hover {
-  background-color: #212a3a;
+  background-color: #293449;
 }
 
 
@@ -1409,6 +1409,9 @@ a {
 
 .slider-item p {
   padding-left: 25px;
+
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .slide-button {
