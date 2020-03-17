@@ -223,8 +223,16 @@ a {
   cursor: pointer;
 }
 
-.log-in:hover {
-  background-image: url("../img/icon-login-hover.svg");
+.log-in img {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+
+  opacity: 0.3;
+}
+
+.log-in img:hover {
+  opacity: 100%;
 }
 
 .log-in:active,
@@ -820,13 +828,11 @@ a {
 }
 
 .log-in {
+  position: relative;
+
   height: 35px;
 
-  background-image: url("../img/icon-login.png");
-  background-position: 15% 40%;
-  background-repeat: no-repeat;
-
-  padding-left: 50px;
+  padding-left: 40px;
   padding-top: 10px;
   padding-right: 25px;
 }
@@ -1299,8 +1305,8 @@ a {
 }
 
 .user-back p {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 12px;
   padding-left: 45px;
   padding-right: 60px;
 }
@@ -1315,10 +1321,15 @@ a {
   background-image: url("../img/icon-user.svg");
 }
 
-.icon-logout {
+.icon-logout img {
   position: absolute;
+  top: 15px;
   right: 10px;
-  top: 10px;
+  opacity: 0.3;
+}
+
+.icon-logout img:hover {
+  opacity: 100;
 }
 
 .my-orders {
