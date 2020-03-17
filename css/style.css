@@ -1781,3 +1781,77 @@ fieldset:nth-child(2) ul {
 
   background-color: #f7f3ec;
 }
+
+.item-back-hover {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+
+  background-color: #ffffff;
+  box-shadow: 0px 10px 25px 0 #b4c2dd;
+
+  text-align: center;
+}
+
+.item-back-hover .new-flag {
+  position: absolute;
+  left: 160px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+  padding-top: 45px;
+  margin-left: 40px;
+
+  width: 135px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.item-back-hover .buy-button {
+  padding-top: 15px;
+  padding-right: 45px;
+  padding-left: 45px;
+
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.item-back-hover .bookmark-button {
+  margin-top: 7px;
+  margin-bottom: 35px;
+}
+
+.item-back-hover h3 {
+  width: 155px;
+  padding-left: 30px;
+}
+
+.item-back-hover .price {
+  margin-top: 37px;
+  text-align: center;
+}
+
+.items li:nth-child(3) {
+  position: relative;
+}
+
+.item-back-hover {
+  opacity: 0;
+}
+
+.items li:nth-child(3):hover .item-back-hover {
+  opacity: 1;
+}
+
+.buy {
+  position: relative;
+}
+
+.buy img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  
+}
