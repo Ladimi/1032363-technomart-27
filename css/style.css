@@ -102,7 +102,17 @@ a {
   border-radius: 3px;
 
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 15px;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
 }
 
 .head {
@@ -696,7 +706,7 @@ a {
   background-color: #518534;
 }
 
-.bookmark-button {
+.button-wrapper .bookmark-button {
   color: #32425c;
 
   background-color: #ffffff;
@@ -1093,6 +1103,7 @@ a {
 .company .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 80px;
   margin-top: 20px;
@@ -1795,7 +1806,7 @@ fieldset:nth-child(2) ul {
 
 .item-back-hover .new-flag {
   position: absolute;
-  left: 160px;
+  left: 155px;
 }
 
 .button-wrapper {
@@ -1816,11 +1827,13 @@ fieldset:nth-child(2) ul {
   padding-left: 45px;
 
   box-shadow: inset 0px -3px 0 0 #367315;
+  cursor: pointer;
 }
 
 .item-back-hover .bookmark-button {
   margin-top: 7px;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .item-back-hover h3 {
@@ -1829,11 +1842,17 @@ fieldset:nth-child(2) ul {
 }
 
 .item-back-hover .price {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.item-background:nth-child(3n+3) .item-back-hover .price {
   margin-top: 37px;
+  margin-bottom: 22px;
   text-align: center;
 }
 
-.items li:nth-child(3) {
+.items li {
   position: relative;
 }
 
@@ -1841,17 +1860,34 @@ fieldset:nth-child(2) ul {
   opacity: 0;
 }
 
-.items li:nth-child(3):hover .item-back-hover {
+.items li:hover .item-back-hover {
   opacity: 1;
 }
 
 .buy {
   position: relative;
+
+  margin-top: 15px;
+  margin-bottom: 7px;
 }
 
 .buy img {
   position: absolute;
-  top: 15px;
-  left: 15px;
-  
+  left: 12px;
+
+  opacity: 0.3;
+}
+
+.buy img:hover {
+  opacity: 1;
+}
+
+.icon-up,
+.icon-down {
+  opacity: 0.3;
+}
+
+.icon-up:hover,
+.icon-down:hover {
+  opacity: 1;
 }
