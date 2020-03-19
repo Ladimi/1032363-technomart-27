@@ -241,8 +241,8 @@ a {
   opacity: 0.3;
 }
 
-.log-in img:hover {
-  opacity: 100%;
+.log-in:hover img {
+  opacity: 1;
 }
 
 .log-in:active,
