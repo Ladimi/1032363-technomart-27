@@ -263,20 +263,20 @@ a {
   list-style: none;
 }
 
-.menu-section li {
+.menu-section li a {
   padding-top: 20px;
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.menu-section li:first-child {
+.menu-section li:first-child a{
   padding-top: 20px;
   padding-right: 30px;
   padding-bottom: 20px;
   padding-left: 40px;
 }
 
-.menu-section li:last-child {
+.menu-section li:last-child a {
   padding-top: 20px;
   padding-right: 40px;
   padding-left: 30px;
@@ -292,6 +292,8 @@ a {
 }
 
 .menu-section a {
+  display: block;
+  height: 100%;
   color: #ffffff;
 }
 
