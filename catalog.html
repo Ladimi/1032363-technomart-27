@@ -16,17 +16,18 @@
             <div class="logo">
               <a href="#"><img src="img/logo.svg" width="109px" height="19px" alt="логотип магазина Техномарт"></a>
             </div>
-            <input class="search" placeholder="Поиск:" id="search-box" type="text" name="search">
-          <div class="bookmark">
-            <a href="#">
+            <div class=block-search>
+              <input class="search" type="search" placeholder="Поиск:" id="search-box" name="search">
+              <img src="img/icon-search.svg" width="17px" height="17px" alt="иконка поиска">
+            </div>
+            <a class="bookmark" href="#">
+              <img src="img/icon-bookmark-white.svg" width="14px" height="16px" alt="иконка закладок">
               Закладки: 0
             </a>
-          </div>
-          <div class="cart-full">
-            <a href="#">
+            <a class="cart-full" href="#">
+              <img src="img/cart-icon.svg" width="15px" height="15px" alt="иконка корзины">
               Корзина: 10
             </a>
-          </div>
           <a href="#" class="order-button">Оформить заказ</a>
         </div>
         </section>
@@ -79,12 +80,19 @@
         <div class="container">
           <ul class="breadcrambs">
             <li>
+              <a href="index.html"><img src="img/icon-home.svg"></a>
+            <li>
+              <img src="img/icon-right-small.svg" width="8px" height="12px">
               <a href="catalog.html">Магазин</a>
             </li>
             <li>
+              <img src="img/icon-right-small.svg" width="8px" height="12px">
               <a href="">Инструменты</a>
             </li>
-            <li class="breadcrumbs-current">Перфораторы</li>
+            <li class="breadcrumbs-current">
+              <img src="img/icon-right-small.svg" width="8px" height="12px">
+              Перфораторы
+            </li>
           </ul>
         </div>
         <div class="container">
@@ -123,9 +131,16 @@
            <section class="price-filter">
             <h3>цена:</h3>
             <div class="range">
-              <div class="range1"></div>
-              <div class="range2"></div>
-              <div class="range3"></div>
+              <div class="range1">
+                <div class="filter-line"></div>
+                <div class="filter-line-green"></div>
+                <img class="filter-button1" src="img/filter-button.svg" width="20px" height="22px">
+                <img class="filter-button2" src="img/filter-button.svg" width="20px" height="22px">
+              </div>
+              <div class="range-wrapper">
+                <div class="range2">0</div>
+                <div class="range3">30000</div>
+              </div>
             </div>
           </section>
           <section>
@@ -402,12 +417,12 @@
             </section>
          </div>
         </div>
-        <ul class="pagination">
-          <li class="active">1</li>
-          <li class="page"><a href="#">2</a></li>
-          <li class="page"><a href="#">3</a></li>
-          <li class="next-page"><a href="#">следующая</a></li>
-        </ul>
+          <ul class="pagination">
+            <li class="active">1</li>
+            <li class="page"><a href="#">2</a></li>
+            <li class="page"><a href="#">3</a></li>
+            <li class="next-page"><a href="#">следующая</a></li>
+          </ul>
         <section>
           <div class="service-back">
            <div class="container">
@@ -481,6 +496,7 @@
             </div>
           </div>
       </footer>
+
 	<section class="modal modal-check">
 	  <button class="modal-close" type="button">X</button>
 	  <h2>Товар добавлен в корзину</h2>
