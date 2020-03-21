@@ -440,8 +440,8 @@
       </footer>
 	<section class="modal modal-login">
     <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
-	  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-	    <div>
+	  <form action="https://echo.htmlacademy.ru" method="post">
+	    <div class="login-form">
 		  <label for="user-name">Ваше имя:</label>
 		  <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
 		</div>
@@ -453,28 +453,30 @@
 	
 	<section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-	  <button class="modal-close" type="button">X</button>
-	  <div>
-	    <img src="img/map2.svg" width="940px" height="446px" alt="Офис компании по адресу ул. Большая Конюшенная 19">
+	  <img class="modal-close" src="img/icon-close.svg" width="21px" height="21px" alt="закрыть">
+	  <div class="map2">
+      <img src="img/map2.png" width="940px" height="446px" alt="Офис компании по адресу ул. Большая Конюшенная 19">
 	  </div>
   </section>
 	
 	<section class="modal modal-message">
-	  <button class="modal-close" type="button">X</button>
+	  <img class="modal-close" src="img/icon-close.svg" width="21px" height="21px" alt="закрыть">
 	  <h2 class="visually-hidden">Форма отправки сообщения</h2>
-	  <form class="message-form" action="https://echo.htmlacademy.ru" metod="post">
-	    <div>
+    <form class="message-form" action="https://echo.htmlacademy.ru" metod="post">
+      <div class="modal-wrapper">
+	     <div>
 		    <label for="user-name">Ваше имя</label>
 		    <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
 		  </div>
-		<div>
-		  <label for="user-email">Ваш e-mail</label>
-		  <input id="user-email" type="email" name="email" placeholder="email@example.com">
-		</div>
-		<div>
-		  <label for="user-massage">Текст письма</label>
-		  <input id="user-massage" type="text" name="massage" placeholder="В свободной форме">
-		</div>
+		  <div class="user-email">
+		    <label for="user-email">Ваш e-mail</label>
+		    <input id="user-email" type="email" name="email" placeholder="email@example.com">
+      </div>
+     </div>
+		  <div class="textarea">
+		    <label for="user-massage">Текст письма</label>
+		    <input id="user-massage" type="text" name="massage" placeholder="В свободной форме">
+		  </div>
 		<div class="modal-back">
 			<button class="button" type="submit">Отправить</button>
 		</div>
