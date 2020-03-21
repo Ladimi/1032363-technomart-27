@@ -57,7 +57,7 @@ body {
 }
 
 html {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -145,8 +145,6 @@ a {
 }
 
 .top-background .order-button {
-  width: 130px;
-
   font-family: "Cuprum";
   font-size: 17px;
   line-height: 18px;
@@ -170,8 +168,7 @@ a {
 }
 
 .search {
-  width: 250px;
-  height: 40px;
+  height: 42px;
 
   background-color: #293449;
   border: none;
@@ -182,7 +179,7 @@ a {
   cursor: pointer;
 }
 
-.input[type="search"]::placeholder {
+.block-search input[type="search"]::placeholder {
   color: #ffffff;
 }
 
@@ -235,7 +232,7 @@ a {
 
 .log-in img {
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 11px;
 
   opacity: 0.3;
@@ -598,6 +595,8 @@ a {
 }
 
 .modal h2 {
+  margin: 0;
+
   font:inherit;
   font-size: 30px;
   line-height: 30px;
@@ -617,12 +616,14 @@ a {
 
 .login-form input[type="text"] {
   color: #999999;
+  border: solid 2px #d7dcde;
+}
 
+.login-form input[type="text"]:hover {
   border: solid 2px #b5b5b5;
 }
 
 .login-form input[type="text"]:focus {
-
   border: solid 2px #ee3643;
 }
 
@@ -745,6 +746,7 @@ a {
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .view {
@@ -794,14 +796,22 @@ a {
 }
 
 .bookmark,
-.cart,
+.cart {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+
+  color: #ffffff;
+}
+
 .cart-full {
   position: relative;
   padding-left: 40px;
   padding-top: 12px;
+  padding-right: 17px;
   padding-bottom: 12px;
-
-  width: 110px;
 
   color: #ffffff;
 }
@@ -810,12 +820,19 @@ a {
   position: relative;
 }
 
-.bookmark img,
-.cart img,
-.cart-full img,
 .block-search img {
   position: absolute;
-  left: 13px;
+  left: 20px;
+  top: 13px;
+
+  opacity: 0.3;
+}
+
+.bookmark img,
+.cart img,
+.cart-full img {
+  position: absolute;
+  left: 10px;
   top: 13px;
 
   opacity: 0.3;
@@ -836,7 +853,8 @@ a {
 }
 
 .search {
-  padding-left: 40px;
+  padding-left: 55px;
+  padding-right: 50px;
 }
 
 .store-wrapper {
@@ -851,20 +869,20 @@ a {
 .log-in {
   position: relative;
 
-  height: 35px;
+  height: 100%;
 
-  padding-left: 40px;
+  padding-left: 50px;
   padding-top: 10px;
-  padding-right: 25px;
+  padding-right: 24px;
+  margin-right: 10px;
 }
 
 .register {
-  width: 100px;
-  height: 35px;
+  height: 100%;
 
-  padding-left: 25px;
+  padding-left: 28px;
   padding-top: 10px;
-  padding-right: 25px;
+  padding-right: 28px;
 }
 
 .login-back-wrapper {
@@ -872,13 +890,14 @@ a {
   flex-direction: row;
   justify-content: space-between;
 
-  width: 300px;
+  height: 45px;
 }
 
 .order-button {
   padding-top: 12px;
   padding-bottom: 11px;
-  padding-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .menu-back {
@@ -901,8 +920,6 @@ a {
 }
 
 .phone-number {
-  width: 250px;
-
   text-align: center;
 
   background-image: url("../img/icon-phone.png");
@@ -1275,6 +1292,10 @@ a {
   border: 1px solid #bdc6ca;
 }
 
+.pagination li:first-child:hover {
+  border: none;
+}
+
 .pagination li:active {
   border: 1px solid #ee3643;
 }
@@ -1325,9 +1346,6 @@ a {
 
 .user-back {
   position: relative;
-
-  width: 300px;
-  height: 45px;
 }
 
 .user-back p {
@@ -1570,7 +1588,7 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 
-  width: 95px;
+  width: 135px;
 
   background-color: #000000;
   opacity: 0.1;
@@ -1646,21 +1664,17 @@ a {
 .sort-back {
   display: flex;
   padding-top: 10px;
+  margin-left: 15px;
 }
 
 .sort-back h3 {
   padding-left: 20px;
-  padding-right: 135px;
 }
 
 .sorting,
 .icon-dir {
   display: flex;
 }
-
-/*.sorting li:first-child a {
-  color: #ee3643;
-}*/
 
 .sorting li a {
   color: #cbcbcb;
@@ -1677,8 +1691,14 @@ a {
   border: none;
 }
 
+.sorting li:first-child a {
+  color: #ee3643;
+  border: none;
+}
+
 .sorting li:first-child {
   padding-right: 65px;
+  padding-left: 115px;
 }
 
 .sorting li:last-child {
@@ -1735,6 +1755,7 @@ fieldset li {
   width: max-content;
   padding-bottom: 20px;
   padding-left: 30px;
+  cursor: pointer;
 }
 
 fieldset:nth-child(2) {
@@ -1753,6 +1774,11 @@ fieldset:nth-child(2) ul {
   padding-left: 40px;
 
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.view:hover {
+  border: 1px solid #bdc6ca;
 }
 
 .sort-wrapper ul {
@@ -1830,14 +1856,15 @@ fieldset:nth-child(2) ul {
 
 .item-back-hover .new-flag {
   position: absolute;
-  left: 155px;
+  left: 152px;
+  top: -1px;
 }
 
 .button-wrapper {
   display: flex;
   flex-direction: column;
   
-  padding-top: 45px;
+  padding-top: 35px;
   margin-left: 40px;
 
   width: 135px;
@@ -1856,13 +1883,14 @@ fieldset:nth-child(2) ul {
 
 .item-back-hover .bookmark-button {
   margin-top: 7px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   cursor: pointer;
 }
 
 .item-back-hover h3 {
   width: 155px;
   padding-left: 30px;
+  margin-left: 15px;
 }
 
 .item-back-hover .price {
@@ -1872,7 +1900,7 @@ fieldset:nth-child(2) ul {
 
 .item-background:nth-child(3n+3) .item-back-hover .price {
   margin-top: 37px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -1897,6 +1925,7 @@ fieldset:nth-child(2) ul {
 
 .buy img {
   position: absolute;
+  top: 5px;
   left: 12px;
 
   opacity: 0.3;
@@ -1906,7 +1935,6 @@ fieldset:nth-child(2) ul {
   opacity: 1;
 }
 
-.icon-up,
 .icon-down {
   opacity: 0.3;
 }
@@ -1941,12 +1969,16 @@ fieldset:nth-child(2) ul {
   position: absolute;
   right: 35px;
   top: 30px;
+
+  cursor: pointer;
 }
 
 .filter-button2 {
   position: absolute;
   left: 10px;
   top: 30px;
+
+  cursor: pointer;
 }
 
 .range-wrapper {
@@ -1955,14 +1987,139 @@ fieldset:nth-child(2) ul {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
-
 }
 
 .range2,
 .range3 {
   padding-top: 10px;
+  padding-bottom: 10px;
 
   width: 95px;
-  height: 28px;
   background-color: #f7f3ec;;
+}
+
+.modal-check {
+  position: relative;
+  width: 620px;
+  box-shadow: 0px 20px 40px 0 #565e6e;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+}
+
+.white-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  padding-top: 10px;
+  padding-left: 44px;
+  padding-right: 48px;
+}
+
+.make-order-button {
+  padding-left: 59px;
+  padding-right: 62px;
+  margin-right: 20px;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.modal-back {
+  margin-top: 68px;
+}
+
+.modal-check h2 {
+  padding-top: 75px;
+}
+
+.modal-check img:nth-child(2) {
+  position: absolute;
+  top: 55px;
+  right: 500px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-login,
+.modal-message {
+  position: relative;
+  width: 620px;
+  box-shadow: 0px 20px 40px 0 #383738;
+}
+
+.login-form {
+  margin-top: 55px;
+  margin-left: 80px;
+}
+
+.login-form label,
+.modal-message label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-form input,
+.modal-message input {
+  padding-left: 20px;
+  
+  width: 220px;
+  height: 38px;
+}
+
+.modal-login button,
+.modal-message button {
+  margin-top: 37px;
+  margin-bottom: 37px;
+  padding-left: 198px;
+  padding-right: 198px;
+  margin-left: 80px;
+}
+
+.modal-wrapper {
+  display: flex;
+  margin-top: 55px;
+}
+
+.textarea,
+.modal-wrapper {
+  margin-left: 80px;
+}
+
+.textarea {
+  margin-top: 20px;
+}
+
+.user-email {
+  margin-left: 20px;
+}
+
+.textarea input {
+  width: 460px;
+  height: 114px;
+}
+
+.modal-message .modal-back {
+  margin-top: 37px;
+}
+
+.modal-map {
+  position: relative;
+  width: 940px;
+  height: 446px;
+  border: none;
+  box-shadow: 0px 20px 40px 0 #383738;
 }
